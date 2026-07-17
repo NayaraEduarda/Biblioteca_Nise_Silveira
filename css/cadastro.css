@@ -1,0 +1,187 @@
+/* Remove margens padrão */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Corpo da página */
+body{
+    font-family:Arial, sans-serif;
+    color:#5a8b64;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header{
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* Imagem da logo */
+.logo img{
+    width:30px;
+    vertical-align: middle;
+}
+
+/* Nome da biblioteca */
+.logo a{
+    text-decoration:none;
+    color:#f0f0d0;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:12px;
+}
+
+/* Menu */
+nav{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    color:#f0f0d0;
+    text-decoration:none;
+    font-size:18px;
+    transition: all 0.3s ease;
+ 
+}
+
+
+/* Efeito ao passar o mouse */
+nav a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+/* Fim do cabeçalho */
+
+
+/* Área principal */
+main{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    width:60%;
+    margin:40px auto;
+}
+
+/* Caixas dos formulários */
+.cadastro,
+.login{
+
+    border:4px solid #5a8b64;
+    border-radius:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+}
+
+/* Formulários */
+form{
+
+    display:flex;
+    flex-direction:column;
+    width:80%;
+}
+
+/* Títulos */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Rótulos */
+label{
+
+    font-size:20px;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+
+/* Campos */
+input{
+
+    height:50px;
+    border:2px solid #5a8b64;
+    border-radius:30px;
+    padding:10px;
+    margin-bottom:10px;
+    font-size: 18px;
+}
+
+/* Botões */
+button{
+
+    margin-top:20px;
+    background:#5a8b64;
+    color:white;
+    border:none;
+    border-radius:20px;
+    padding:15px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Efeito do botão */
+button:hover{
+    transform:scale(1.05);
+}
+
+
+footer{
+
+
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    margin-top: auto;
+}
+
+
+footer a{
+    text-decoration:none;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:20px;
+    color:#f0f0d0;
+}
+
+
+/* Redes sociais */
+.redes{
+
+    display:flex;
+    gap:15px;
+}
+
+/* Ícones */
+.redes img{
+    width:25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,163 @@
+
+/* Remove margens padrão */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Corpo da página */
+body{
+    font-family:Arial, sans-serif;
+    color:#5a8b64;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+/* Cabeçalho */
+header{
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* Imagem da logo */
+.logo img{
+    width:30px;
+    vertical-align: middle;
+}
+
+/* Nome da biblioteca */
+.logo a{
+    text-decoration:none;
+    color:#f0f0d0;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:12px;
+}
+
+/* Menu */
+nav{
+    display:flex;
+    gap:50px;
+}
+
+/* Links do menu */
+nav a{
+    color:#f0f0d0;
+    text-decoration:none;
+    font-size:18px;
+    transition: all 0.3s ease;
+ 
+}
+
+
+/* Efeito ao passar o mouse */
+nav a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+/* Fim do cabeçalho */
+
+
+
+/* Conteúdo principal */
+main{
+
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+        flex: 1;
+}
+
+
+/* Títulos */
+.informacoes h2{
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+/* Parágrafos */
+.informacoes p{
+
+    font-size:20px;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* lInks */
+.informacoes a{
+
+    color:#5d8b62;
+    text-decoration:none;
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+/* Ícones */
+.informacoes img{
+    width:25px;
+    vertical-align: middle;
+}
+
+iframe {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+
+
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    margin-top: auto;
+}
+
+
+footer a{
+    text-decoration:none;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:20px;
+    color:#f0f0d0;
+}
+
+
+
+
+/* Redes sociais */
+.redes{
+
+    display:flex;
+    gap:15px;
+}
+
+/* Ícones */
+.redes img{
+    width:25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+}

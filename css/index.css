@@ -1,0 +1,186 @@
+/* Remove margens padrão */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Corpo da página */
+body{
+    font-family:Arial, sans-serif;
+    color:#5a8b64;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header{
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* Imagem da logo */
+.logo img{
+    width:30px;
+    vertical-align: middle;
+}
+
+/* Nome da biblioteca */
+.logo a{
+    text-decoration:none;
+    color:#f0f0d0;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:12px;
+}
+
+/* Menu */
+nav{
+    display:flex;
+    gap:50px;
+}
+
+/* Links do menu */
+nav a{
+    color:#f0f0d0;
+    text-decoration:none;
+    font-size:18px;
+    transition: all 0.3s ease;
+  
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+/* Fim do cabeçalho */
+
+/* Área principal */
+main{
+
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    flex: 1;
+
+}
+
+/* Banner */
+.banner{
+
+    width:100%;
+    border-radius:15px;
+}
+
+/* Título principal */
+h1{
+
+    margin-top:30px;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+/* Parágrafos */
+p{
+
+    font-size:20px;
+    line-height:1.5;
+    margin-bottom:20px;
+    text-align:justify;
+
+}
+
+
+/* Barra de pesquisa */
+.pesquisa{
+
+    display:flex;
+    margin-bottom:60px;
+}
+
+/* Campo de texto */
+.pesquisa input{
+
+    flex:1;
+    padding:15px;
+    border:none;
+    background:#d9ecb8;
+    border-radius:30px 0 0 30px;
+    font-size: 20px;
+}
+
+/* Botão */
+.pesquisa button{
+
+    border:none;
+    background:#d9ecb8;
+    padding:10px 20px;
+    border-radius:0 30px 30px 0;
+    cursor: pointer;
+}
+
+/* Imagem da lupa */
+.pesquisa img{
+
+    width:30px;
+}
+
+
+/* Título lateral */
+.informacoes h2{
+
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* Rodapé */
+footer{
+
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    margin-top: auto;
+}
+
+footer a{
+    text-decoration:none;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:20px;
+    color:#f0f0d0;
+}
+
+/* Redes sociais */
+.redes{
+
+    display:flex;
+    gap:15px;
+}
+
+/* Ícones */
+.redes img{
+    width:25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+}

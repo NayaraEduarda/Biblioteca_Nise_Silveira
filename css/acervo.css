@@ -1,0 +1,230 @@
+/* Remove margens padrão */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Corpo da página */
+body{
+    font-family:Arial, sans-serif;
+    color:#5a8b64;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+/* Cabeçalho */
+header{
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* Imagem da logo */
+.logo img{
+    width:30px;
+    vertical-align: middle;
+}
+
+/* Nome da biblioteca */
+.logo a{
+    text-decoration:none;
+    color:#f0f0d0;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:12px;
+}
+
+/* Menu */
+nav{
+    display:flex;
+    gap:50px;
+}
+
+/* Links do menu */
+nav a{
+    color:#f0f0d0;
+    text-decoration:none;
+    font-size:18px;
+    transition: all 0.3s ease;
+ 
+}
+
+
+/* Efeito ao passar o mouse */
+nav a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}
+/* Fim do cabeçalho */
+
+
+
+/* Área principal */
+.acervo{
+
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:50px;
+    flex:1;
+}
+
+/* Títulos */
+.acervo h1{
+
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.acervo h2{
+
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+/* Texto */
+p{
+
+    font-size:20px;
+    line-height:1.6;
+    text-align:justify;
+    margin-bottom:50px;
+}
+
+/* Lista */
+ul{
+
+    margin-left:30px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* Barra de pesquisa */
+.pesquisa{
+
+    display:flex;
+    margin-bottom:60px;
+}
+
+/* Campo de texto */
+.pesquisa input{
+
+    flex:1;
+    padding:15px;
+    border:none;
+    background:#d6ebb6;
+    border-radius:30px 0 0 30px;
+    font-size:20px;
+    margin-top: 10px;
+}
+
+/* Botão */
+.pesquisa button{
+
+    border:none;
+    background:#d6ebb6;
+    padding:10px 20px;
+    border-radius:0 30px 30px 0;
+    cursor: pointer;
+        margin-top: 10px;
+}
+
+.pesquisa img{
+    width:30px;
+}
+
+/* Cards das seções */
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:20px;
+    margin-bottom:60px;
+}
+
+/* Cards menores */
+.cards-menores{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* Estilo dos cards */
+.card{
+    background:#d6ebb6;
+    color:#19351d;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    font-size: 20px;
+    align-content:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* Coleções e recursos */
+.blocos{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+
+/* Rodapé */
+footer{
+
+
+    background:#5a8b64;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    margin-top: auto;
+}
+
+
+footer a{
+    text-decoration:none;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:20px;
+    color:#f0f0d0;
+}
+
+
+/* Redes sociais */
+.redes{
+
+    display:flex;
+    gap:15px;
+}
+
+/* Ícones */
+.redes img{
+    width:25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.redes img:hover{
+    transform: scale(1.1);
+}
